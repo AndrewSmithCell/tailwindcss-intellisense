@@ -1,8 +1,10 @@
 name: Publish Release
 concurrency: publish
 on:
-  workflow_dispatch: {}
-
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'tags to create build'
 jobs:
   publish:
     runs-on: ubuntu-latest
