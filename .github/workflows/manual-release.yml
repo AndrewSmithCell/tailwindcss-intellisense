@@ -28,5 +28,5 @@ jobs:
       - name: create release and upload assets
         uses: softprops/action-gh-release@v2
         with:
-          files: '*.vsix'
+          files: packages/vscode-tailwindcss/vscode-tailwindcss-0.10.5.vsix
           tag_name: ${{ github.event.inputs.tags }}
