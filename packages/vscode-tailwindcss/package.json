@@ -345,6 +345,7 @@
     "publish": "vsce publish --no-dependencies",
     "copy:notices": "cp ../tailwindcss-language-server/ThirdPartyNotices.txt ./dist/ThirdPartyNotices.txt",
     "vscode:prepublish": "npm run build && npm run copy:notices",
+    "build-package": "npm run build && vsce package --no-dependencies",
     "clean": "rimraf dist",
     "check": "tsc --noEmit"
   },
